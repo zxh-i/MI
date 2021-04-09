@@ -28,6 +28,11 @@ gulp.task("js", done => {
         .pipe(gulp.dest("dist/js"))
     done();
 })
+gulp.task("font", done => {
+    gulp.src("font/**")
+        .pipe(gulp.dest("dist/font"))
+    done();
+})
 gulp.task("img", done => {
     gulp.src("img/*")
         .pipe(gulp.dest("dist/images"))
@@ -42,6 +47,7 @@ gulp.task("watch", done => {
     gulp.watch("sass/*.scss", gulp.series("sass"));
     gulp.watch("js/*.js", gulp.series("js"));
     gulp.watch("img/*", gulp.series("img"));
+    gulp.watch("font/**", gulp.series("font"));
     done();
 })
 //服务器
@@ -53,5 +59,5 @@ gulp.task("server", done => {
     done();
 })
 
-gulp.task("build", gulp.parallel("html", "sass", "js", "img"));
+gulp.task("build", gulp.parallel("html", "sass", "js", "img", "font"));
 gulp.task("default", gulp.series("build", "server", "watch"));

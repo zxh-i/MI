@@ -6,11 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
+    <link rel="stylesheet" href="font/iconfont.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://www.swiper.com.cn/package/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-container {
+            /* width: 100%;
+            height: 100%; */
+            width: 1229px;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <div>shouye</div>
+    <div class="header">
+        <div class="top-wrap">
+            <div class="top">
+                <div class="top-nav">
+                    <a href="#">小米商城</a>
+                    <span class="sep">|</span>
+                    <a href="#">MIUI</a>
+                    <span class="sep">|</span>
+                    <a href="#">IoT</a>
+                    <span class="sep">|</span>
+                    <a href="#">云服务</a>
+                    <span class="sep">|</span>
+                    <a href="#">天星科技</a>
+                    <span class="sep">|</span>
+                    <a href="#">有品</a>
+                    <span class="sep">|</span>
+                    <a href="#">小米开放平台</a>
+                    <span class="sep">|</span>
+                    <a href="#">企业团购</a>
+                    <span class="sep">|</span>
+                    <a href="#">资质证照</a>
+                    <span class="sep">|</span>
+                    <a href="#">协议规则</a>
+                    <span class="sep">|</span>
+                    <a href="#">下载app</a>
+                    <span class="sep">|</span>
+                    <a href="#">智能生活</a>
+                    <span class="sep">|</span>
+                    <a href="#">SelectLocation</a>
+                    <span class="sep">|</span>
+                </div>
+                <div class="top-bar">
+                    <em class="iconfont icon-gouwuchekong"></em>
+                    <em>购物车</em>
+                    <span>(0)</span>
+                </div>
+                <div class="top-info">
+                    <a href="#">登录</a>
+                    <span>|</span>
+                    <a href="#">注册</a>
+                    <span>|</span>
+                    <a href="#">消息通知</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-header-wrap">
+            <div class="site-header">
+                <div class="header-logo">
+                    <a href="#"><img src="images/logo.png" alt="" width="56px"></a>
+                </div>
+                <div class="header-nav">
+                    <ul>
+                        <li><a href="#">小米手机</a></li>
+                        <li><a href="#">Redmi红米</a></li>
+                        <li><a href="#">电视</a></li>
+                        <li><a href="#">笔记本</a></li>
+                        <li><a href="#">家电</a></li>
+                        <li><a href="#">路由器</a></li>
+                        <li><a href="#">智能软件</a></li>
+                        <li><a href="#">服务</a></li>
+                        <li><a href="#">社区</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <input type="search" value="电视机">
+                    <div class="iconfont icon-sousuo button"> </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="page-main"> -->
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(images/swiper.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper4.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <!-- </div> -->
+    <script src="https://www.swiper.com.cn/package/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            autoplay: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                autoplay: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
+</body>
+
 
 </html>
