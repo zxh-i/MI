@@ -8,23 +8,13 @@
     <title>首页</title>
     <link rel="stylesheet" href="font/iconfont.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://www.swiper.com.cn/package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"></script>
     <style>
-        html,
+        /*   html,
         body {
-            /* position: relative; */
             height: 100%;
-        }
-
-        .swiper-container {
-            width: 1229px;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            background-position: center;
-            background-size: cover;
-        }
+        } */
     </style>
 </head>
 
@@ -100,30 +90,520 @@
         </div>
 
     </div>
-    <!-- <div class="page-main"> -->
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container banner1">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(images/swiper.jpg);background-size: cover;"></div>
-            <div class="swiper-slide" style="background-image:url(images/swiper1.jpg);background-size: cover;"></div>
-            <div class="swiper-slide" style="background-image:url(images/swiper2.jpg);background-size: cover;"></div>
-            <div class="swiper-slide" style="background-image:url(images/swiper3.jpg);background-size: cover;"></div>
-            <div class="swiper-slide" style="background-image:url(images/swiper4.jpg);background-size: cover;"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper.jpg);background-size:contain"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper1.jpg);background-size:contain"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper2.jpg);background-size:contain"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper3.jpg);background-size:contain"></div>
+            <div class="swiper-slide" style="background-image:url(images/swiper4.jpg);background-size:contain"></div>
         </div>
-        <!-- Add Pagination -->
+        <!-- 轮播圆点 -->
         <div class="swiper-pagination swiper-pagination-white"></div>
-        <!-- Add Arrows -->
+        <!-- 轮播箭头 -->
         <div class="swiper-button-next swiper-button-white"></div>
         <div class="swiper-button-prev swiper-button-white"></div>
+        <!-- 轮播上的导航 -->
+        <div class="site-category">
+            <ul class="site-category-list">
+                <li class="category-item">
+                    <a href="#">手机 电话卡</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">电视 盒子</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">笔记本 显示器</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">家电 插线板</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">出行 穿戴</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">智能 路由器</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">电源 配件</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">健康 儿童</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">耳机 音响</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+                <li class="category-item">
+                    <a href="#">生活 箱包</a>
+                    <em class="iconfont-arrow-right">></em>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- </div> -->
-    <script src="https://www.swiper.com.cn/package/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
+    <!-- 轮播下面 -->
+    <div class="home-hero-sub">
+        <div class="home-hero-sub-left">
+            <ul>
+                <li>
+                    <em></em>
+                    <div><img src="images/秒杀.png" alt=""><span>小米秒杀</span></div>
+                </li>
+                <li>
+                    <em></em>
+                    <div><img src="images/团购.png" alt=""><span>企业团购</span></div>
+                </li>
+                <li>
+                    <em></em>
+                    <div><img src="images/F.png" alt=""><span>F码通道</span></div>
+                </li>
+                <li>
+                    <em></em>
+                    <div><img src="images/卡.png" alt=""><span>米粉卡</span></div>
+                </li>
+                <li>
+                    <em></em>
+                    <div><img src="images/换新.png" alt=""><span>以旧换新</span></div>
+                </li>
+                <li>
+                    <em></em>
+                    <div><img src="images/话费.png" alt=""><span>话费充值</span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="home-hero-sub-right">
+            <div class="pig1"><img src="images/1.jpg" alt=""></div>
+            <div class="pig2"><img src="images/2.jpg" alt=""></div>
+            <div class="pig3"><img src="images/3.jpg" alt=""></div>
+        </div>
+    </div>
+    <!-- 秒杀 -->
+    <div class="miaoshatxtwrap">
+        <div class="miaoshatxt">小米秒杀</div>
+    </div>
+    <div class="miaowrap">
+        <div class="miao">
+            <div class="miaosha">qw</div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next" id="arrowright"></div>
+            <div class="swiper-button-prev" id="arrowleft"></div>
+            <div class="swiper-container banner2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/miaosha.png" alt="">
+                        <p>小米无线鼠标2 皎月白</p>
+                        <p>极简设计，舒适静音</p>
+                        <p>49元<del>59元</del></p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+        <div class="miaoshaimg">
+            <img src="images/miaosha.jpg" alt="">
+        </div>
+    </div>
+    <!-- 手机 -->
+    <div class="phonewrap">
+        <div class="phone">
+            <div class="shouji">手机</div>
+            <div class="phone-l">
+                <img src="images/shouji1.jpg" alt="">
+            </div>
+            <div class="phone-r">
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="images/shouji2.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji3.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="images/shouji5.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="images/shouji2.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji3.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="images/shouji4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="miaowrap">
+        <div class="miaoshaimg">
+            <img src="images/miaosha.jpg" alt="">
+        </div>
+    </div>
+    <!-- 家电 -->
+    <div class="jiadianwrap">
+        <div class="jiadian">
+            <div class="jiadiantxt">家电</div>
+            <div class="jiadian-l">
+                <dl>
+                    <dt><img src="images/jiadian.jpg" alt=""></dt>
+                </dl>
+                <dl>
+                    <dt><img src="images/jiadian.jpg" alt=""></dt>
+                </dl>
+            </div>
+            <div class="jiadian-r">
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="images/shouji2.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji3.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji3.png" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="images/shouji4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="images/shouji4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/shouji4.jpg" alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <div class="box1">
+                    <dd>
+                        <p>米家电烤箱</p>
+                        <p>299元</p>
+                    </dd>
+                    <dt><img src="images/jiadian2.jpg" alt=""></dt>
+                </div>
+                <div class="box2">333</div>
+
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+    <!-- 底部 -->
+    <footer>
+        <div class="server">
+            <ul>
+                <li>
+                    <span class="iconfont icon-shezhi"></span>
+                    <span>预约维修服务</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-7tiantuihuanhuo"></span>
+                    <span>7天无理由退货</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-15"></span>
+                    <span>15天免费换货</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-liwu"></span>
+                    <span>满69包邮</span>
+                </li>
+                <li>
+                    <span class="iconfont icon-location"></span>
+                    <span>520余家售后网点</span>
+                </li>
+            </ul>
+        </div>
+        <div class="peopleserver">
+            <dl>
+                <dt>帮助中心</dt>
+                <dd>账户管理</dd>
+                <dd>购物指南</dd>
+                <dd>订单操作</dd>
+            </dl>
+            <dl>
+                <dt>服务支持</dt>
+                <dd>售后政策</dd>
+                <dd>自助服务</dd>
+                <dd>相关下载</dd>
+            </dl>
+            <dl>
+                <dt>线下门店</dt>
+                <dd>小米之家</dd>
+                <dd>服务网点</dd>
+                <dd>授权体验店</dd>
+            </dl>
+            <dl>
+                <dt>关于小米</dt>
+                <dd>了解小米</dd>
+                <dd>加入小米</dd>
+                <dd>投资者关系</dd>
+                <dd>企业社会责任</dd>
+                <dd>廉洁举报</dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd>新浪微博</dd>
+                <dd>官方微信</dd>
+                <dd>联系我们</dd>
+                <dd>公益基金会</dd>
+            </dl>
+            <dl>
+                <dt>特色服务</dt>
+                <dd>F码通道</dd>
+                <dd>礼物码</dd>
+                <dd>防伪查询</dd>
+            </dl>
+            <em></em>
+            <div class="people-right">
+                <p>400-1005678</p>
+                <p>8:00-18:00(仅收市话费)</p>
+                <div>人工客服</div>
+                <p>关注小米：<span class="iconfont icon-weibo"></span><span class="iconfont icon-weixin"></span></p>
+            </div>
+        </div>
+        <div class="banquanwrap">
+            <div class="banquan">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="txt">
+                    <p class="txt1">
+                        <a href="#">小米商城</a>|
+                        <a href="#">MIUI</a>|
+                        <a href="#">米家</a>|
+                        <a href="#">米聊</a>|
+                        <a href="#">多看</a>|
+                        <a href="#">游戏</a>|
+                        <a href="#">政企服务</a>|
+                        <a href="#">小米天猫店</a>|
+                        <a href="#">小米集团隐私</a>|
+                        <a href="#">小米集团隐私政策</a>|
+                        <a href="#">小米公司儿童信息保护规则</a>|
+                        <a href="#">小米商城隐私政策</a>|
+                        <a href="#">问题反馈</a>|
+                        <a href="#">SelectLocation</a>|
+                    </p>
+                    <p class="txt1">
+                        <a href="#">北京互联网法院法律服务工作站</a>|
+                        <a href="#">中国消费者协会</a>|
+                        <a href="#">北京市消费者协会</a>
+                    </p>
+                    <p class="txt2">@mi.com京ICP证110507 京ICP备10046444号 京公网安备1101080202134号 京网文[2020]0276-042号</p>
+                    <p class="txt2">
+                        <a href="#">网械平台备字(2018) 第00005号</a>
+                        <a href="#">互联网药品信息服务资格证(京)-非经营性-2014-0090</a>
+                        <a href="#">营业执照</a>
+                        <a href="#">医疗器械质量公告</a>
+                    </p>
+                    <p class="txt2">
+                        <a href="#">增值电信业务许可证</a>
+                        网络食品经营备案 京食药网食备202010048
+                        <a href="#">食品经营许可证</a>
+                    </p>
+                    <p class="txt2">
+                        违法和不良信息举报电话：171-5104-4404
+                        <a href="#">知识产权侵权投诉</a>
+                        本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                    <div>
+                        <img src="images/footer.png" alt="">
+                        <img src="images/footer2.png" alt="">
+                        <img src="images/footer3.png" alt="">
+                        <img src="images/footer4.png" alt="">
+                    </div>
+                </div>
+                <p class="last">让全球每个人都能享受到科技带来的美好生活</p>
+
+            </div>
+        </div>
+    </footer>
+    <!-- 轮播js -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.banner1', {
             spaceBetween: 30,
             effect: 'fade',
             autoplay: true,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -132,6 +612,24 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- 轮播2 -->
+    <script>
+        var swiper = new Swiper('.banner2', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '#arrowright',
+                prevEl: '#arrowleft',
             },
         });
     </script>

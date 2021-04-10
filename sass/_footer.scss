@@ -1,0 +1,145 @@
+$wid:1229px;
+footer{
+    clear: both;
+    .server{
+        width: $wid;
+        height: 79px;
+        margin: 0 auto;
+        border-bottom: 1px solid #e0e0e0;
+        li{
+            width: 243px;
+            height: 26px;
+            float: left;
+            border-right: 1px solid #e0e0e0;
+            margin-top: 27px;
+            &:last-child{
+                border-right: none;
+            }
+            span:first-child{
+                margin-left: 54px;
+            }
+        }
+
+    }
+    .peopleserver{
+        width: $wid;
+        height: 250px;
+        margin: 0 auto;
+        dl{
+            float: left;
+            width: 75px;
+            margin: 0 43px;
+            dt{
+                font-size: 12px;
+                color: #000;
+                margin-top: 40px;
+                margin-bottom: 22px;
+            }
+            dd{
+                    font-size: 11px;
+                    color: #797579;
+                    line-height: 28px;
+            }
+        }
+        em{
+            display: inline-block;
+            width: 1px;
+            height: 110px;
+            background: #e0e0e0;
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .people-right{
+            width: 140px;
+            height: 110px;
+            margin-top: 42px;
+            float: right;
+            margin-right: 60px;
+            p:first-child{
+                color: #ff674f;
+                font-size: 16px;
+                line-height: 1;
+                margin-bottom: 5px;
+            }
+            p:nth-child(2){
+                color: #61656f;
+                font-size: 12px;
+                margin-bottom: 6px;
+            }
+            div{
+                width: 118px;
+                height: 28px;
+                border: 1px solid #ff674f;
+                background: url("../images/xiao.jpg") no-repeat 10px 10px;
+                text-align: center;
+                cursor: pointer;
+                margin-bottom: 5px;
+                line-height: 28px;
+            }
+            div:hover{
+                color: #fff;
+                background:#f25807 url("../images/xiao1.jpg") no-repeat 10px 10px;
+            }
+             p:nth-child(4){
+                color: #61656f;
+                font-size: 11px;
+                span{
+                    font-size: 18px;
+                    margin: 0 3px;
+                }
+            }
+
+        }
+    }
+    .banquanwrap{
+        width: 100%;
+        background: #fafafa;
+        .banquan{
+            width: $wid;
+            height: 265px;
+            margin: 0 auto;
+            overflow: hidden;
+            .logo{
+                float: left;
+                width: 56px;
+                height: 265px;
+                margin-top: 30px;
+                margin-right: 10px;
+                img{
+                    width: 56px;
+                }
+            }
+            .txt{
+                margin-top: 30px;
+                p{
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                .txt1{
+                    color: #817975;
+                    a:hover{
+                        color: #ff674f;
+                    }
+                }
+                .txt2 a ,.txt2{
+                    color: #b4b4b4;
+                    a:hover{
+                        color: #ff674f;
+                    }
+                }
+                img{
+                    float: left;
+                    width: 85px;
+                    height: 30px;
+                    margin: 0 3px;
+                }
+            }
+            .last{
+                margin-top: 76px;
+                text-align: center;
+                color: #bababa;
+                font-size: 16px;
+            }
+        }
+    }
+}
