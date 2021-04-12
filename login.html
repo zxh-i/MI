@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src=""></script>
 </head>
+
 <body>
-    登录<input type="text">
+    <div class="login-logo">
+        <img src="images/login.jpg" alt="">
+    </div>
+    <div class="login-banner">
+        <div class="login-mainbox">
+            <span class="denglu1 denglu">账号登录</span>
+            <span style="border-right:none;" class="saomadenglu">扫码登录</span>
+            <div class="zhanghao">
+                <input type="text" placeholder="邮箱/手机号码/小米ID">
+                <input type="password" placeholder="密码">
+                <input type="button" value="登录">
+                <p class="phonelogin"><a href="regist.html">手机短信登录/注册</a></p>
+                <p class="nowlogin"><a href="#">立即注册</a>|<a href="#">忘记密码</a></p>
+                <div class="icon">
+                    <em class="iconfont icon-weixin"></em>
+                    <em class="iconfont icon-weibo" style="background-color:#d32f2f"></em>
+                    <em class="iconfont icon-weixin"></em>
+                    <em class="iconfont icon-weibo" style="background-color:#d32f2f"></em>
+                </div>
+            </div>
+            <div class="saoma" style="display: none;">
+                <p class="saomap1">请使用小米手机/米家等小米旗下APP扫码登录<strong>?</strong></p>
+                <img src="images/erweima.png" alt="">
+                <p class="saomap2">使用<i>小米商城APP</i>扫一扫</p>
+                <p class="saomap3">小米手机可打开[设置]>[小米账号]扫码登录</p>
+            </div>
+            <div class="dayi" style="display: none;">
+                <p>常用答疑<i id="dayidelet">×</i></p>
+                <p>1.如何用小米手机扫一扫</p>
+                <p>答：点击小米手机-设置-账号头像-右上角扫一扫。</p>
+                <p>2.小米旗下哪些APP支持扫码登录</p>
+                <p>答：目前包含米家、小米商城、小爱音响。</p>
+                <p>3.其他登录方式</p>
+                <p>答：可以使用微信/微博/QQ客户端扫码授权登录</p>
+            </div>
+        </div>
+    </div>
+    <div class="loginfooter">
+        <p class="footerfirst">
+            <a href="#">简体</a>|
+            <a href="#">繁体</a>|
+            <a href="#">English</a>|
+            <a href="#">常见问题</a>|
+            <a href="#">隐私政策</a>|
+        </p>
+        <p class="footersec">
+            小米公司版权所有-京ICP备10046444-京公安备案11010802020134号-京ICP证110507号
+        </p>
+    </div>
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/login.js"></script>
+
 </html>
