@@ -1,0 +1,1 @@
+$(function(){$.get("http://jx.xuzhixiang.top/ap/api/cart-list.php",{id:1002876}).then(t=>{console.log(t)})});

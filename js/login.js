@@ -19,3 +19,24 @@ $(".saomadenglu").click(function () {
     $(".saomadenglu").addClass("denglu");
     $(".saomadenglu").siblings().removeClass("denglu");
 })
+
+$(function () {
+    $("#login").click(function () {
+        if ($("#username").val() && $("#password").val()) {
+            $.get("http://jx.xuzhixiang.top/ap/api/login.php", {
+                username: $("#username").val(),
+                password: $("#password").val(),
+            }, res => {
+                console.log(res)
+                if (res.code == 1) {
+                    alert("登录成功")
+                    location.href = "index.html";
+                } else {
+                    alert("用户名或密码不正确")
+                }
+            })
+        } else {
+            alert("用户名或密码不能为空")
+        }
+    })
+})

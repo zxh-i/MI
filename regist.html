@@ -29,9 +29,11 @@
                 <select name="" id="" class="select2">
                     <option value="">+86</option>
                 </select>
-                <input type="text" placeholder="国家" class="input2">
+                <input type="text" placeholder="请输入手机号码" class="input2">
+                <span style="color: #ff6700;font-size: 12px;"></span>
             </div>
-            <input type="button" value="立即注册">
+            <input type="password" placeholder="请输入密码" class="mima">
+            <input type="button" value="立即注册" id="submit">
             <p class="tongyi">已阅读并同意：小米<b>用户协议</b>和<b>隐私政策</b></p>
         </div>
 
@@ -48,6 +50,45 @@
             小米公司版权所有-京ICP备10046444-京公安备案11010802020134号-京ICP证110507号
         </p>
     </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        var oInput = document.querySelector(".input2");
+        var oSpan = document.querySelector("span");
+        var tellReg = /^1(2|3|4|5|6|7|8|9)\d{9}$/;
+        oInput.onchange = function () {
+            var val = oInput.value;
+            if (tellReg.test(val)) {
+                oSpan.innerText = "";
+            } else {
+                oSpan.innerText = "手机号码格式错误";
+            }
+        }
+
+
+        $("#submit").click(function () {
+            if ($(".input2").val() && $(".mima").val() != "") {
+                $.get("http://jx.xuzhixiang.top/ap/api/reg.php", {
+                    username: $(".input2").val(),
+                    password: $(".mima").val(),
+                }, res => {
+                    console.log(res.code);
+                    if (res.code == 1) {
+                        alert("注册成功")
+                        location.href = "login.html";
+                    } else {
+                        alert("注册失败")
+                    }
+
+                })
+
+            } else {
+                alert("注册失败")
+            }
+
+
+        })
+
+    </script>
 </body>
 
 </html>

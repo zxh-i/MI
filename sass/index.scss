@@ -143,6 +143,9 @@ $wid: 1229px;
                     float: left;
                     padding: 0 10px;
                     font-size: 15px;
+                    &:hover a {
+                        color: #ff6700;
+                    }
                 }
                 li:first-child {
                     margin-left: 178px;
@@ -267,6 +270,35 @@ $wid: 1229px;
             }
             .category-item:hover {
                 background: #ff6700;
+            }
+        }
+    }
+
+    .phonecard {
+        width: 994px;
+        height: 458px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        border: 1px solid #e0e0e0;
+        box-shadow: 2px 2px 5px #555555ce;
+        ul {
+            li {
+                width: 200px;
+                height: 70px;
+                margin-top: 20px;
+                // background: rosybrown;
+                float: left;
+                margin-right: 60px;
+                img {
+                    width: 100px;
+                    float: left;
+                }
+                span {
+                    line-height: 76px;
+                }
             }
         }
     }
@@ -478,6 +510,8 @@ $wid: 1229px;
             }
         }
         .phone-r {
+            width: 995px;
+            float: right;
             dl:hover {
                 box-shadow: 1px 3px 12px #afafaf;
                 transform: translateY(-1px);
@@ -487,7 +521,7 @@ $wid: 1229px;
                 float: left;
                 width: 230px;
                 height: 300px;
-                margin: 0 10px;
+                margin: 0 9px;
                 background: #fff;
                 margin-bottom: 14px;
                 dt {
@@ -542,7 +576,8 @@ $wid: 1229px;
             }
         }
         .jiadian-r {
-            float: lright;
+            width: 995px;
+            float: right;
             dl:hover {
                 box-shadow: 1px 3px 12px #afafaf;
                 transform: translateY(-1px);

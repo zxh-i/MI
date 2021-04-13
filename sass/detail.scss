@@ -1,0 +1,164 @@
+.xm-product-box {
+    position: relative;
+    z-index: 4;
+    .nav-bar {
+        position: relative;
+        height: 63px;
+        width: 100%;
+        margin-top: 0;
+        color: #616161;
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: 0 1px 5px #cecece;
+        background: #fff;
+        .container {
+            width: 1226px;
+            margin-right: auto;
+            margin-left: auto;
+            h2 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 60px;
+                color: #424242;
+                float: left;
+            }
+            .con {
+                .left {
+                    float: left;
+                    margin-left: 5px;
+                    font-size: 12px;
+                    margin-top: 21px;
+                    span {
+                        margin: 0 0.5em;
+                        color: #424242;
+                    }
+                    a {
+                        color: #616161;
+                    }
+                }
+                .right {
+                    float: right;
+                    margin: 17px 0 0 0;
+                    a {
+                        color: #616161;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+.product-box {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    .img-left {
+        float: left;
+        img {
+            width: 560px;
+            height: 560px;
+        }
+    }
+    .product-con {
+        width: 600px;
+        height: 560px;
+        background: pink;
+        float: right;
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            font-weight: 400;
+            color: #212121;
+            margin-top: 50px;
+        }
+        p:nth-child(2) {
+            color: #b0b0b0;
+            margin: 0;
+            padding: 0;
+            padding-top: 8px;
+            line-height: 1.5;
+            font-size: 14px;
+            margin-top: 6px;
+            span {
+                color: #ff6700;
+            }
+        }
+        p:nth-child(3) {
+            font-size: 14px;
+            color: #ff6700;
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        p:nth-child(4) {
+            font-size: 18px;
+            line-height: 1;
+            color: #ff6700;
+            margin-top: 8px;
+        }
+        .product-cart {
+            width: 300px;
+            height: 54px;
+            background: #ff6700;
+            border-color: #ff6700;
+            color: #fff;
+            line-height: 52px;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 40px;
+            float: left;
+            margin-bottom: 30px;
+            &:hover {
+                background: #d35704;
+            }
+        }
+        .like {
+            width: 140px;
+            height: 52px;
+            line-height: 52px;
+            border: 1px solid #b0b0b0;
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+            background: #b0b0b0;
+            float: left;
+            margin-left: 30px;
+            margin-top: 38px;
+            color: #fff;
+            &:hover {
+                background: #616161;
+                transition: all 0.5s;
+            }
+        }
+        .jiesuan {
+            clear: both;
+            width: 300px;
+            height: 54px;
+            background: #ff6700;
+            color: #fff;
+            line-height: 52px;
+            font-size: 16px;
+            text-align: center;
+            &:hover {
+                background: #d35704;
+            }
+        }
+    }
+}
+.huaxianjia {
+    height: 266px;
+    background: #dddddd;
+    clear: both;
+    .huaxianbox {
+        width: 1226px;
+        margin: 0 auto;
+        p {
+            font-size: 24px;
+            margin-top: 5px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
