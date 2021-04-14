@@ -50,9 +50,9 @@
                     <span>(0)</span>
                 </div>
                 <div class="top-info">
-                    <a href="login.html">登录</a>
+                    <a href="login.html" id="login">登录</a>
                     <span>|</span>
-                    <a href="#">注册</a>
+                    <a href="regist.html" id="regist">注册</a>
                     <span>|</span>
                     <a href="#">消息通知</a>
                 </div>
@@ -466,7 +466,12 @@
     <!-- 手机 -->
     <div class="phonewrap">
         <div class="phone">
-            <div class="shouji">手机</div>
+            <div class="shouji">手机
+                <div class="jiadiantxt-right">
+                    查看更多&nbsp;&nbsp;&nbsp;
+                    <span>></span>
+                </div>
+            </div>
             <div class="phone-l">
                 <img src="images/shouji1.jpg" alt="">
             </div>
@@ -562,19 +567,30 @@
     <!-- 家电 -->
     <div class="jiadianwrap">
         <div class="jiadian">
-            <div class="jiadiantxt">家电</div>
+            <div class="jiadiantxt">
+                <div class="jia">
+                    家电
+                </div>
+                <div class="how">
+                    <span id="remen">热门</span>
+                    <span id="yingyin">电视影音</span>
+                </div>
+            </div>
+
             <div class="jiadian-l">
                 <dl>
                     <dt><img src="images/jiadian.jpg" alt=""></dt>
                 </dl>
                 <dl>
-                    <dt><img src="images/jiadian.jpg" alt=""></dt>
+                    <dt><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dfbdabe36b2d630d57a015e6fb5eb3ea.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            alt=""></dt>
                 </dl>
             </div>
-            <div class="jiadian-r clean">
+            <div class="jiadian-r clean" id="how" style="display: none;">
                 <dl style="margin-left: 15px;">
                     <dt>
-                        <img src="images/shouji2.png" alt="">
+                        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/7e2127506fd2209f3115828404269d45.jpg?thumb=1&w=200&h=200"
+                            alt="">
                     </dt>
                     <dd>
                         <p>小米MIX FOLD</p>
@@ -584,7 +600,8 @@
                 </dl>
                 <dl>
                     <dt>
-                        <img src="images/shouji3.png" alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
                     </dt>
                     <dd>
                         <p>小米MIX FOLD</p>
@@ -594,7 +611,8 @@
                 </dl>
                 <dl>
                     <dt>
-                        <img src="images/shouji3.png" alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
                     </dt>
                     <dd>
                         <p>小米MIX FOLD</p>
@@ -604,7 +622,8 @@
                 </dl>
                 <dl style="margin-right: 0px;">
                     <dt>
-                        <img src="images/shouji4.jpg" alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f193daba3989eadac5e13ae102b91582.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
                     </dt>
                     <dd>
                         <p>小米MIX FOLD</p>
@@ -614,7 +633,8 @@
                 </dl>
                 <dl style="margin-left: 15px;">
                     <dt>
-                        <img src="images/shouji4.jpg" alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
                     </dt>
                     <dd>
                         <p>小米MIX FOLD</p>
@@ -624,7 +644,8 @@
                 </dl>
                 <dl>
                     <dt>
-                        <img src="images/shouji4.jpg" alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f674ced205c2e81125dfd2d6659aabfc.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
                     </dt>
                     <dd>
                         <p>小米MIX FOLD</p>
@@ -634,7 +655,105 @@
                 </dl>
                 <dl>
                     <dt>
-                        <img src="images/shouji4.jpg" alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecbe6a6c0d4950b78b086d7ada654e3b.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <div class="box1">
+                    <dd>
+                        <p>米家电烤箱</p>
+                        <p>299元</p>
+                    </dd>
+                    <dt><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8861fafd390bf76f7446d4db2053560f.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                            alt=""></dt>
+                </div>
+                <div class="box2">
+                    <div class="liulan">
+                        <p>浏览更多</p>
+                        <p>热门</p>
+                    </div>
+                    <div class="more">
+                        <img src="images/more.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="jiadian-r clean" id="flim">
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6bed167fc905bab57dee478bcf1e5e0d.JPG?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b8c63a2024528fe5410ebe669b7d2407.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
                     </dt>
                     <dd>
                         <p>小米MIX FOLD</p>
@@ -649,17 +768,473 @@
                     </dd>
                     <dt><img src="images/jiadian2.jpg" alt=""></dt>
                 </div>
-                <div class="box2">333</div>
+                <div class="box2">
+                    <div class="liulan">
+                        <p>浏览更多</p>
+                        <p>热门</p>
+                    </div>
+                    <div class="more">
+                        <img src="images/more.jpg" alt="">
+                    </div>
+                </div>
 
             </div>
         </div>
 
+    </div>
+    <div class="miaowrap">
+        <div class="miaoshaimg">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/41d16e66381cfeda7b6b39ab67678d5e.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                alt="">
+        </div>
+    </div>
+    <!-- 家电2 -->
+    <div class="jiadianwrap">
+        <div class="jiadian">
+            <div class="jiadiantxt">
+                <div class="jia">
+                    家电
+                </div>
+                <div class="how">
+                    <span id="remen">热门</span>
+                    <span id="yingyin">电视影音</span>
+                </div>
+            </div>
+
+            <div class="jiadian-l">
+                <dl>
+                    <dt><img src="images/jiadian.jpg" alt=""></dt>
+                </dl>
+                <dl>
+                    <dt><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dfbdabe36b2d630d57a015e6fb5eb3ea.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            alt=""></dt>
+                </dl>
+            </div>
+            <div class="jiadian-r clean" id="how" style="display: none;">
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/7e2127506fd2209f3115828404269d45.jpg?thumb=1&w=200&h=200"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f193daba3989eadac5e13ae102b91582.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f674ced205c2e81125dfd2d6659aabfc.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecbe6a6c0d4950b78b086d7ada654e3b.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <div class="box1">
+                    <dd>
+                        <p>米家电烤箱</p>
+                        <p>299元</p>
+                    </dd>
+                    <dt><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8861fafd390bf76f7446d4db2053560f.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                            alt=""></dt>
+                </div>
+                <div class="box2">
+                    <div class="liulan">
+                        <p>浏览更多</p>
+                        <p>热门</p>
+                    </div>
+                    <div class="more">
+                        <img src="images/more.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="jiadian-r clean" id="flim">
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6bed167fc905bab57dee478bcf1e5e0d.JPG?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b8c63a2024528fe5410ebe669b7d2407.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <div class="box1">
+                    <dd>
+                        <p>米家电烤箱</p>
+                        <p>299元</p>
+                    </dd>
+                    <dt><img src="images/jiadian2.jpg" alt=""></dt>
+                </div>
+                <div class="box2">
+                    <div class="liulan">
+                        <p>浏览更多</p>
+                        <p>热门</p>
+                    </div>
+                    <div class="more">
+                        <img src="images/more.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
+    <div class="miaowrap">
+        <div class="miaoshaimg">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e8fc8ba9718c266882719fb4bbcedd.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                alt="">
+        </div>
     </div>
+    <div class="jiadianwrap">
+        <div class="jiadian">
+            <div class="jiadiantxt">
+                <div class="jia">
+                    家电
+                </div>
+                <div class="how">
+                    <span id="remen">热门</span>
+                    <span id="yingyin">电视影音</span>
+                </div>
+            </div>
 
+            <div class="jiadian-l">
+                <dl>
+                    <dt><img src="images/jiadian.jpg" alt=""></dt>
+                </dl>
+                <dl>
+                    <dt><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dfbdabe36b2d630d57a015e6fb5eb3ea.jpg?thumb=1&w=234&h=300&f=webp&q=90"
+                            alt=""></dt>
+                </dl>
+            </div>
+            <div class="jiadian-r clean" id="how" style="display: none;">
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/7e2127506fd2209f3115828404269d45.jpg?thumb=1&w=200&h=200"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f193daba3989eadac5e13ae102b91582.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b3fe3a07ef69fb4c959e39c768c7525.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f674ced205c2e81125dfd2d6659aabfc.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecbe6a6c0d4950b78b086d7ada654e3b.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <div class="box1">
+                    <dd>
+                        <p>米家电烤箱</p>
+                        <p>299元</p>
+                    </dd>
+                    <dt><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8861fafd390bf76f7446d4db2053560f.jpg?thumb=1&w=100&h=100&f=webp&q=90"
+                            alt=""></dt>
+                </div>
+                <div class="box2">
+                    <div class="liulan">
+                        <p>浏览更多</p>
+                        <p>热门</p>
+                    </div>
+                    <div class="more">
+                        <img src="images/more.jpg" alt="">
+                    </div>
+                </div>
 
+            </div>
+            <div class="jiadian-r clean" id="flim">
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03a9e7e96a09d256ca1badeec186c859.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d36fbaa18625e4fe507af31e4e9f83.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9d8674cd21c486feff5328772ab9cf01.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-right: 0px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6bed167fc905bab57dee478bcf1e5e0d.JPG?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl style="margin-left: 15px;">
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b8c63a2024528fe5410ebe669b7d2407.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74e573c4c0d89048392d14831cc507d5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e5f89adf98ab3fccb34012b5209cd58.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                            alt="">
+                    </dt>
+                    <dd>
+                        <p>小米MIX FOLD</p>
+                        <p>折叠大屏|自研芯片</p>
+                        <p>9999元起</p>
+                    </dd>
+                </dl>
+                <div class="box1">
+                    <dd>
+                        <p>米家电烤箱</p>
+                        <p>299元</p>
+                    </dd>
+                    <dt><img src="images/jiadian2.jpg" alt=""></dt>
+                </div>
+                <div class="box2">
+                    <div class="liulan">
+                        <p>浏览更多</p>
+                        <p>热门</p>
+                    </div>
+                    <div class="more">
+                        <img src="images/more.jpg" alt="">
+                    </div>
+                </div>
 
+            </div>
+        </div>
+
+    </div>
+    <div class="miaowrap">
+        <div class="miaoshaimg">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/01cc6a570d32a2ee09a2d5c2009a9968.jpg?thumb=1&w=1226&h=120&f=webp&q=90"
+                alt="">
+        </div>
+    </div>
 
     <!-- 楼梯 -->
     <div class="home-tool-bar">
@@ -813,6 +1388,15 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        let username = location.search.split("=")[1];
+        $("#login").html("<i>登录成功</i>")
+        $("#regist").html("<a href='index.html'>退出登录</a>")
+        if (username === undefined) {
+            $("#login").html("<a href='login.html' id='login'>登录</a>")
+            $("#regist").html("<a href='regist.html' id='login'>注册</a>")
+        }
+    </script>
 </body>
 
 

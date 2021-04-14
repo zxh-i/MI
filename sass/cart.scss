@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clean:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #ff6700;
+    img {
+        width: 50px;
+        float: left;
+        margin-top: 24px;
+        margin-left: 62px;
+        margin-right: 45px;
+    }
+    h2 {
+        font-size: 28px;
+        color: #424242;
+        float: left;
+        margin-right: 15px;
+        margin-top: 30px;
+    }
+    span {
+        color: #818181;
+        font-size: 12px;
+        display: inline-block;
+        margin-top: 45px;
+    }
+}
+.cart-wrap {
+    background: #f5f5f5;
+    overflow: hidden;
+    .cart-con {
+        width: 1225px;
+        // height: 300px;
+        margin: 0 auto;
+        background: #fff;
+        margin-top: 38px;
+        .cart-header {
+            height: 70px;
+            border-bottom: 1px solid #f5f5f5;
+            input {
+                border: none;
+                width: 20px;
+                height: 20px;
+                background: #ff6700;
+                margin-top: 23px;
+                float: left;
+                margin-left: 24px;
+                margin-right: 15px;
+            }
+            span {
+                font-size: 12px;
+                color: #424242;
+                line-height: 70px;
+                display: inline-block;
+            }
+            span:nth-child(2) {
+                margin-right: 160px;
+            }
+            span:nth-child(3) {
+                margin-right: 360px;
+            }
+            span:nth-child(4) {
+                margin-right: 150px;
+            }
+            span:nth-child(5) {
+                margin-right: 150px;
+            }
+            span:nth-child(6) {
+                margin-right: 80px;
+            }
+        }
+        .cart-product {
+            // height: 116px;
+            border-bottom: 1px solid #f5f5f5;
+            li {
+                float: left;
+                list-style: none;
+                input[type="checkbox"] {
+                    border: none;
+                    width: 20px;
+                    height: 20px;
+                    background: #ff6700;
+                    margin-top: 47px;
+                    float: left;
+                    margin-left: 24px;
+                    margin-right: 15px;
+                }
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin-top: 20px;
+                    margin-left: 50px;
+                    float: left;
+                }
+                span {
+                    height: 116px;
+                    line-height: 116px;
+                }
+                span:nth-child(3) {
+                    margin-left: 55px;
+                    display: block;
+                    width: 300px;
+                    float: left;
+                }
+                span:nth-child(4) {
+                    display: block;
+                    margin-left: 90px;
+                    width: 100px;
+                    float: left;
+                }
+                span:nth-child(5) {
+                    margin-left: 70px;
+                    display: block;
+                    width: 20px;
+                    float: left;
+                    cursor: pointer;
+                }
+                span:nth-child(7) {
+                    cursor: pointer;
+                    display: block;
+                    width: 20px;
+                    float: left;
+                    cursor: pointer;
+                }
+                input[type="text"] {
+                    width: 75px;
+                    height: 40px;
+                    border: none;
+                    float: left;
+                    margin-top: 35px;
+                    border: 1px solid #f5f5f5;
+                }
+                span:nth-child(8) {
+                    margin-left: 90px;
+                    color: #ff6700;
+                    display: block;
+                    float: left;
+                    width: 100px;
+                }
+                p:nth-child(9) {
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    float: right;
+                    margin-top: 50px;
+                    margin-right: 80px;
+                    cursor: pointer;
+                    &:hover {
+                        border-radius: 10px;
+                        background: #ff6700;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .xiaoji {
+        width: 1225px;
+        margin: 0 auto;
+        height: 50px;
+        margin-top: 20px;
+        background: #fff;
+        margin-bottom: 20px;
+        a {
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 14px;
+            color: #757575;
+            margin-left: 32px;
+            border-right: 1px solid #f5f5f5;
+            padding: 0 10px 0 0;
+            float: left;
+            &:hover {
+                color: #ff6700;
+            }
+        }
+        p {
+            margin-left: 17px;
+            line-height: 50px;
+            float: left;
+            font-size: 14px;
+            color: #757575;
+            span {
+                color: #ff6700;
+            }
+        }
+        em {
+            font-style: normal;
+            display: block;
+            float: left;
+            margin-left: 630px;
+            color: #ff6700;
+            font-size: 14px;
+            margin-top: 8px;
+            span {
+                font-size: 24px;
+            }
+        }
+        .button {
+            float: right;
+            width: 200px;
+            height: 50px;
+            background: #ff6700;
+            color: #fff;
+            line-height: 50px;
+            font-size: 14px;
+            text-align: center;
+            &:hover {
+                background: #e45e05;
+            }
+        }
+    }
+}

@@ -76,7 +76,18 @@ $(function () {
             $(".phonecard").hide();
         }
     );
-    // 购物车
+
+    //家电（热门、电视影音）
+    $("#remen").mouseenter(function () {
+        $("#how").hide();
+        $("#flim").show();
+    })
+    $("#yingyin").mouseenter(function () {
+        console.log("1");
+        $("#how").show();
+        $("#flim").hide();
+        console.log($("#how"));
+    })
 })
 //轮播1
 var swiper = new Swiper('.banner1', {

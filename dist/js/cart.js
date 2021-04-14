@@ -1,1 +1,13 @@
-$(function(){$.get("http://jx.xuzhixiang.top/ap/api/cart-list.php",{id:1002876}).then(t=>{console.log(t)})});
+$(function(){$.get("http://jx.xuzhixiang.top/ap/api/cart-list.php",{id:1002876}).then(i=>{console.log(i);let t=0;var e=i.data;let n="";console.log(e);for(let i=0;i<e.length;i++)n+=`
+         <li id="list">
+             <input type="checkbox" name="" id="single">
+             <img src="${e[i].pimg}" alt="">
+             <span>${e[i].pname}</span>
+             <span class="price">${e[i].pprice}</span>
+             <span class="minus">-</span>
+             <input type="text" class="num" pid="${e[i].pid}" uid="${e[i].uid}" value="${e[i].pnum}">
+             <span class="plus">+</span>
+             <span class="siglePrice">${e[i].pprice*e[i].pnum}</span>
+             <p class="del">X</p>
+         </li>
+         `;$(".cart-product").html(n);for(let i=0;i<e.length;i++)t+=Number($(".siglePrice").eq(i).text());$(".heji").text(t),$(".plus").click(function(){var i=$(this).siblings(".num").val();$(this).siblings(".num").val(++i);var t=$(this).siblings(".price").text();$(this).siblings(".siglePrice").text(t*i);var e=$(this).siblings(".num").attr("uid"),t=$(this).siblings(".num").attr("pid");$.get("http://jx.xuzhixiang.top/ap/api/cart-update-num.php",{uid:e,pid:t,pnum:i},i=>{console.log(i)})}),$(".minus").click(function(){let i=$(this).siblings(".num").val();i<=1?$(this).siblings(".num").val(1):$(this).siblings(".num").val(--i);var t=$(this).siblings(".price").text();$(this).siblings(".siglePrice").text(t*i);var e=$(this).siblings(".num").attr("uid"),t=$(this).siblings(".num").attr("pid");$.get("http://jx.xuzhixiang.top/ap/api/cart-update-num.php",{uid:e,pid:t,pnum:i},i=>{console.log(i)})}),$(".num").change(function(){var i=$(this).val(),t=$(this).siblings(".price").text();$(this).siblings(".siglePrice").text(t*i);var e=$(this).attr("uid"),t=$(this).attr("pid");$.get("http://jx.xuzhixiang.top/ap/api/cart-update-num.php",{uid:e,pid:t,pnum:i},i=>{console.log(i)})}),$(".del").click(function(){var i=$(this).siblings(".num").attr("uid"),t=$(this).siblings(".num").attr("pid");$(this).parent().remove(),$.get("http://jx.xuzhixiang.top/ap/api/cart-delete.php",{uid:i,pid:t},i=>{console.log(i)})});let l=document.querySelectorAll("#checkAll"),s=document.querySelectorAll("#single");var p=document.querySelectorAll("#list");l[0].onclick=()=>{for(let i=0;i<s.length;i++)s[i].checked=l[0].checked};for(let t=0;t<p.length;t++){s[t].onclick=()=>{let t=0;for(let i=0;i<s.length;i++)s[i].checked&&t++;t===s.length?l[0].checked=!0:l[0].checked=!1;let i=document.querySelector("#xuan");i.innerText=t};let i=document.querySelector("#gong");i.innerText=list.length}})});

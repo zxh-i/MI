@@ -1,5 +1,5 @@
 $(function () {
-
+    // 导航下啦
     $(document).ready(function (e) {
         $(".header-nav li").mouseenter(function () {
             // $(".xiaomishoujiboxwrap").stop();
@@ -64,7 +64,7 @@ $(function () {
     })
 
 
-    // 监听事件
+    // 监听事件滚动条滚到一定程度。定在上面
     window.onscroll = function () {
         var topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
         var bignav = document.getElementById("bignav");//获取到导航栏id
@@ -103,10 +103,11 @@ $(function () {
         $(".product-cart").click(function () {
             $.get("http://jx.xuzhixiang.top/ap/api/add-product.php", {
                 uid: 1002876,
-                pid: 415672,
+                pid: pData.pid,
                 pnum: 1
             }).then(res => {
                 console.log(res);
+                location.href = "http://localhost:8080/cart.html?id=pid"
             })
         })
     })

@@ -62,7 +62,7 @@
                 <div class="top-info">
                     <a href="login.html">登录</a>
                     <span>|</span>
-                    <a href="#">注册</a>
+                    <a href="regist.html">注册</a>
                     <span>|</span>
                     <a href="#">消息通知</a>
                 </div>
@@ -212,94 +212,5 @@
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/detail.js"></script>
-<script>
-   /*  $(document).ready(function (e) {
-        $(".header-nav li").mouseenter(function () {
-            // $(".xiaomishoujiboxwrap").stop();
-            $(".xiaomishoujiboxwrap").stop().slideDown(500);
-        })
-        $(".header-nav li").mouseout(function () {
-            // $(".xiaomishoujiboxwrap").stop();
-            $(".xiaomishoujiboxwrap").stop().slideUp(500);
-        })
-    });
-
-    //回到顶部显示隐藏
-    $(window).scroll(function () {
-        var st = $(this).scrollTop();
-        if (st >= 300) {
-            $(".icon-huidaodingbu").fadeIn();
-        } else {
-            $(".icon-huidaodingbu").fadeOut();
-        }
-    });
-    // 点击回到顶部
-    $(".icon-huidaodingbu").click(function () {
-        $("body,html").stop().animate({
-            "scrollTop": 0
-        }, 500);
-    });
-    // 新人注册显示隐藏
-    $(".icon-shouji").mouseenter(function () {
-        $(".newperson").show();
-    }).mouseout(function () {
-        $(".newperson").hide();
-    });
-    // 个人中心
-    $(".icon-changyongicon-").mouseenter(function () {
-        $(".percenter").show();
-    }).mouseout(function () {
-        $(".percenter").hide();
-    })
-    // 售后
-    $(".icon-shezhi").mouseenter(function () {
-        $(".shouhou").show();
-    }).mouseout(function () {
-        $(".shouhou").hide();
-    })
-    // 人工
-    $(".icon-kefu").mouseenter(function () {
-        $(".rengong").show();
-    }).mouseout(function () {
-        $(".rengong").hide();
-    })
-    //购物车
-    $(".icon-gouwuchekong").mouseenter(function () {
-        $(".gouwuche").show();
-    }).mouseout(function () {
-        $(".gouwuche").hide();
-    })
-    // 回到顶部
-    $(".icon-huidaodingbu").mouseenter(function () {
-        $(".top").show();
-    }).mouseout(function () {
-        $(".top").hide();
-    })
-
-
-    // 监听事件
-    window.onscroll = function () {
-        var topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
-        var bignav = document.getElementById("bignav");//获取到导航栏id
-        if (topScroll > 250) { //当滚动距离大于250px时执行下面的东西
-            bignav.style.position = 'fixed';
-            bignav.style.top = '0';
-            bignav.style.zIndex = '9999';
-        } else {//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
-            bignav.style.position = 'static';
-        }
-    }
-
-    let id = location.search.split("=")[1];
-    $.get("http://jx.xuzhixiang.top/ap/api/detail.php", {
-        id: id
-    }).then(res => {
-        console.log(res);
-        var str = "";
-        str = `
-            
-        `;
-    }) */
-</script>
 
 </html>

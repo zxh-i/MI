@@ -6,10 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 
 <body>
-    购物车
+    <div class="header">
+        <img src="images/logo.png" alt="">
+        <h2>我的购物车</h2>
+        <span>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</span>
+    </div>
+    <div class="cart-wrap">
+        <div class="cart-con">
+            <div class="cart-header">
+                <input type="checkbox" name="" id="checkAll">
+                <span>全选</span>
+                <span>商品名称</span>
+                <span>单价</span>
+                <span>数量</span>
+                <span>小计</span>
+                <span>操作</span>
+            </div>
+            <div class="cart-product clean">
+                <!-- <li>
+                    <input type="checkbox" name="" id="">
+                    <img src="images/cart.jpg" alt="">
+                    <span>小米小爱音响</span>
+                    <span>160元</span>
+                    <span class="minus">-</span><input type="text" class="num"><span class="plus">+</span>
+                    <span>160元</span>
+                    <p>X</p>
+                </li> -->
+                <!-- <li>
+                    <input type="checkbox" name="" id="">
+                    <img src="images/cart.jpg" alt="">
+                    <span>小米小爱音响</span>
+                    <span>160元</span>
+                    <span class="minus">-</span><input type="text" class="num"><span class="plus">+</span>
+                    <span>160元</span>
+                    <p>X</p>
+                </li> -->
+            </div>
+
+        </div>
+        <div class="xiaoji">
+            <a href="index.html">继续购物</a>
+            <p>共<span id="gong">1</span>件商品，已选择<span id="xuan">0</span>件</p>
+            <em>合计：<span class="heji">109元</span></em>
+            <div class="button">结算</div>
+        </div>
+    </div>
+
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/cart.js"></script>

@@ -27,10 +27,12 @@ $(function () {
                 username: $("#username").val(),
                 password: $("#password").val(),
             }, res => {
+                let str = "";
+                str = res.data.username
                 console.log(res)
                 if (res.code == 1) {
                     alert("登录成功")
-                    location.href = "index.html";
+                    location.href = "index.html?username=" + str + "";
                 } else {
                     alert("用户名或密码不正确")
                 }

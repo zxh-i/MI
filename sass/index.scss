@@ -88,6 +88,7 @@ $wid: 1229px;
                 text-decoration: none;
                 font-size: 12px;
             }
+
             .sep {
                 color: #424242;
             }
@@ -118,6 +119,10 @@ $wid: 1229px;
             }
             span {
                 color: #424242;
+            }
+            i {
+                font-style: normal;
+                color: #fff;
             }
         }
     }
@@ -494,6 +499,31 @@ $wid: 1229px;
             padding: 19px 0;
             color: #333;
             font-size: 20px;
+            .jiadiantxt-right {
+                float: right;
+                font-size: 16px;
+                color: #333;
+                cursor: pointer;
+                margin-right: 10px;
+                span {
+                    display: block;
+                    float: right;
+                    width: 20px;
+                    height: 20px;
+                    background: #bebebe;
+                    color: #fff;
+                    border-radius: 10px;
+                    text-align: center;
+                    line-height: 20px;
+                    margin-top: 3px;
+                }
+                &:hover {
+                    color: #ff6700;
+                }
+                &:hover span {
+                    background: #ff6700;
+                }
+            }
         }
         .phone-l {
             float: left;
@@ -554,17 +584,41 @@ $wid: 1229px;
 }
 //家电
 .jiadianwrap {
-    height: 715px;
+    height: 685px;
     background: #f5f5f5;
     .jiadian {
         width: $wid;
         margin: 0 auto;
         .jiadiantxt {
+            height: 25px;
             padding: 19px 0;
+            // margin-bottom: 10px;
             color: #333;
             font-size: 20px;
+            .jia {
+                width: 50px;
+                float: left;
+                font-size: 16px;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+            .how {
+                float: right;
+                font-size: 16px;
+                cursor: pointer;
+                span {
+                    padding: 0 5px;
+                }
+                span:hover {
+                    color: #ff6700;
+                }
+            }
+        }
+        .yan {
+            display: none;
         }
         .jiadian-l {
+            clear: both;
             float: left;
             dt {
                 margin-bottom: 15px;
@@ -628,6 +682,25 @@ $wid: 1229px;
                 }
                 dd {
                     float: left;
+                    margin-left: 30px;
+                    p:nth-child(1) {
+                        color: #333;
+                        margin-top: 47px;
+                    }
+                    p:nth-child(2) {
+                        color: #b4b4b4;
+                        margin-top: 4px;
+                        font-size: 12px;
+                        color: #ff6700;
+                    }
+                }
+                dt {
+                    float: right;
+                    img {
+                        width: 80px;
+                        margin-right: 20px;
+                        margin-top: 30px;
+                    }
                 }
             }
             .box2 {
@@ -639,6 +712,27 @@ $wid: 1229px;
                     box-shadow: 1px 3px 12px #afafaf;
                     transform: translateY(-1px);
                     transition: all 0.5s;
+                }
+                .liulan {
+                    width: 100px;
+                    float: left;
+                    margin-left: 30px;
+                    p:nth-child(1) {
+                        color: #333;
+                        margin-top: 47px;
+                    }
+                    p:nth-child(2) {
+                        color: #b4b4b4;
+                        margin-top: 4px;
+                        font-size: 13px;
+                    }
+                }
+                .more {
+                    // width: 100px;
+                    float: right;
+                    background: plum;
+                    margin-right: 40px;
+                    margin-top: 45px;
                 }
             }
         }
