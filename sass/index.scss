@@ -422,7 +422,93 @@ $wid: 1229px;
             float: left;
             width: 235px;
             height: 340px;
-            background: cornflowerblue;
+            background: #f1eded;
+            .se-kl {
+                width: 190px;
+                height: 275px;
+                margin: 0px auto;
+                margin-top: 30px;
+                position: relative;
+            }
+
+            .se-cn {
+                position: absolute;
+                top: 16px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 34px;
+                color: rgb(202, 75, 75);
+            }
+
+            .se-en {
+                position: absolute;
+                top: 86px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            .se-io {
+                width: 20px;
+                height: 33px;
+                position: absolute;
+                background-position: -32.5px 0;
+                background-size: 52.5px 40px;
+                left: 67px;
+                top: 80px;
+                display: block;
+            }
+
+            .se-info {
+                position: absolute;
+                top: 176px;
+                text-align: center;
+                width: 100%;
+                font-size: 14px;
+                color: #afafaf;
+            }
+
+            .se-count {
+                position: absolute;
+                top: 212px;
+                left: 30px;
+                height: 40px;
+            }
+
+            .se-day {
+                display: none;
+            }
+
+            .se-hour,
+            .se-min,
+            .se-sec {
+                position: relative;
+                background-color: #535554;
+                width: 40px;
+                height: 40px;
+                float: left;
+                text-align: center;
+                line-height: 40px;
+                margin-right: 5px;
+            }
+
+            .se-txt {
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .se-txt:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+            }
         }
         #arrowright {
             position: absolute;
@@ -455,9 +541,13 @@ $wid: 1229px;
                     background: #fff;
                     img {
                         margin-left: 20px;
+                        width: 180px;
+                        margin: 0 auto;
+                        margin-top: 20px;
                     }
                     p {
                         text-align: center;
+                        margin-top: 20px;
                     }
                     p:nth-child(2) {
                         font-size: 12px;

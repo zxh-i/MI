@@ -10,6 +10,5 @@ $(function(){$(document).ready(function(o){$(".header-nav li").mouseenter(functi
             <p>${n.pprice}</p>
             <div class="product-cart">加入购物车</div>
             <div class="like">喜欢</div>
-            <div class="jiesuan">去购物车结算</div>
         </div>
         `;$(".product-box").html(o),$(".product-cart").click(function(){$.get("http://jx.xuzhixiang.top/ap/api/add-product.php",{uid:1002876,pid:n.pid,pnum:1}).then(o=>{console.log(o),location.href="http://localhost:8080/cart.html?id=pid"})})})});

@@ -10,7 +10,7 @@ $(function () {
         for (let i = 0; i < pData.length; i++) {
             str += `
          <li id="list">
-             <input type="checkbox" name="" id="single">
+             <input type="checkbox" name="" class="single">
              <img src="${pData[i].pimg}" alt="">
              <span>${pData[i].pname}</span>
              <span class="price">${pData[i].pprice}</span>
@@ -25,10 +25,10 @@ $(function () {
         $(".cart-product").html(str);
 
         // 总价
-        for (let j = 0; j < pData.length; j++) {
+        /* for (let j = 0; j < pData.length; j++) {
             totalPrice += Number($(".siglePrice").eq(j).text());
         }
-        $(".heji").text(totalPrice);
+        $(".heji").text(totalPrice); */
 
         // 加减
         $(".plus").click(function () {
@@ -44,6 +44,17 @@ $(function () {
                 pnum: number
             }, res => {
                 console.log(res);
+                let count = 0;
+                let sum = 0;      //计数
+                for (let j = 0; j < aCk.length; j++) {
+                    if (aCk[j].checked) {
+                        count++;
+                        console.log(aCk[j]);
+                        sum += Number($(".single").eq(j).siblings(".siglePrice").text());
+                    }
+
+                };
+                $(".heji").text(sum);
             })
 
         })
@@ -64,6 +75,17 @@ $(function () {
                 pnum: number
             }, res => {
                 console.log(res);
+                let count = 0;
+                let sum = 0;      //计数
+                for (let j = 0; j < aCk.length; j++) {
+                    if (aCk[j].checked) {
+                        count++;
+                        console.log(aCk[j]);
+                        sum += Number($(".single").eq(j).siblings(".siglePrice").text());
+                    }
+
+                };
+                $(".heji").text(sum);
             })
 
         })
@@ -83,6 +105,17 @@ $(function () {
                 pnum: number
             }, res => {
                 console.log(res);
+                let count = 0;
+                let sum = 0;      //计数
+                for (let j = 0; j < aCk.length; j++) {
+                    if (aCk[j].checked) {
+                        count++;
+                        console.log(aCk[j]);
+                        sum += Number($(".single").eq(j).siblings(".siglePrice").text());
+                    }
+
+                };
+                $(".heji").text(sum);
             })
         })
 
@@ -96,29 +129,56 @@ $(function () {
                 pid: pid,
             }, res => {
                 console.log(res);
+                let count = 0;
+                let sum = 0;      //计数
+                for (let j = 0; j < aCk.length; j++) {
+                    if (aCk[j].checked) {
+                        count++;
+                        console.log(aCk[j]);
+                        sum += Number($(".single").eq(j).siblings(".siglePrice").text());
+                    }
+
+                };
+                $(".heji").text(sum);
             })
+
         })
         //单选框
-        let oCheckAll = document.querySelectorAll("#checkAll");
-        let aCk = document.querySelectorAll("#single");
+        let oCheckAll = document.querySelectorAll("#checkAll");  //全选
+        let aCk = document.querySelectorAll(".single");          //每件商品的选框
         let aList = document.querySelectorAll("#list");
-
 
         oCheckAll[0].onclick = () => {
 
             for (let i = 0; i < aCk.length; i++) {
                 aCk[i].checked = oCheckAll[0].checked;
             }
+            let count = 0;
+            let sum = 0;      //计数
+            for (let j = 0; j < aCk.length; j++) {
+                if (aCk[j].checked) {
+                    count++;
+                    console.log(aCk[j]);
+                    sum += Number($(".single").eq(j).siblings(".siglePrice").text());
+                }
+
+            };
+            $(".heji").text(sum);
         }
 
         for (let i = 0; i < aList.length; i++) {
             aCk[i].onclick = () => {
-                let count = 0; //计数,每次点击时，重新开始计算
+                let count = 0;
+                let sum = 0;      //计数
                 for (let j = 0; j < aCk.length; j++) {
                     if (aCk[j].checked) {
                         count++;
+                        console.log(aCk[j]);
+                        sum += Number($(".single").eq(j).siblings(".siglePrice").text());
                     }
+
                 };
+                $(".heji").text(sum);
 
                 if (count === aCk.length) {
                     oCheckAll[0].checked = true;
@@ -132,10 +192,9 @@ $(function () {
             }
             // 共计几件商品
             let oG = document.querySelector("#gong");
-            oG.innerText = list.length;
+            oG.innerText = aList.length;
+
         }
 
-
     })
-
 })

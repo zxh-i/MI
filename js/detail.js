@@ -96,7 +96,6 @@ $(function () {
             <p>${pData.pprice}</p>
             <div class="product-cart">加入购物车</div>
             <div class="like">喜欢</div>
-            <div class="jiesuan">去购物车结算</div>
         </div>
         `;
         $(".product-box").html(str);

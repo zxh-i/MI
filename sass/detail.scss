@@ -55,16 +55,20 @@
     margin-left: auto;
     .img-left {
         float: left;
+        margin-top: 40px;
+        margin-left: 100px;
         img {
-            width: 560px;
-            height: 560px;
+            width: 400px;
+            height: 400px;
         }
     }
     .product-con {
-        width: 600px;
+        width: 500px;
         height: 560px;
-        background: pink;
+        // background: pink;
         float: right;
+        margin-top: 50px;
+        margin-right: 70px;
         h2 {
             margin: 0;
             padding: 0;
